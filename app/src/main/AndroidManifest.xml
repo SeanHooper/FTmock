@@ -27,6 +27,10 @@
             android:name=".MaiActivity"
             android:label="@string/title_activity_splash" >
         </activity>
+        <activity
+            android:name=".AdActivity"
+            android:label="@string/title_activity_ad" >
+        </activity>
     </application>
 
 </manifest>
