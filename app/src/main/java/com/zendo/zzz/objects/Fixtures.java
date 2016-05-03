@@ -10,9 +10,9 @@ public class Fixtures {
 
     public List<Ad> getExampleAds() {
         List<Ad> output = new ArrayList<Ad>();
-        output.add(new Ad("Bob", "Household", "Cleaning", 200.0, "Cleaning your house"));
+        output.add(new Ad("Bob", "Household", "Cleaning", 20.0, "Cleaning your house"));
         output.add(new Ad("Bob", "Car", "Repair", 200.0, "Engine repairs"));
-        output.add(new Ad("Lisa", "Beauty", "Manicure", 200.0, "Nail painting"));
+        output.add(new Ad("Lisa", "Beauty", "Manicure", 100.0, "Nail painting"));
         return output;
     }
 
@@ -20,6 +20,7 @@ public class Fixtures {
         List<User> output = new ArrayList<User>();
         output.add(new User("Bob", "@mipmap/ic_user_male3", "My name is Bob"));
         output.add(new User("Lisa", "@mipmap/ic_user_female3", "My name is Lisa"));
+        return output;
     }
 }
 
