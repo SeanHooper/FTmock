@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Zzz</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="zendo">Zendo</string>
+    <string name="title_activity_top_ad">topAdActivity</string>
+    <string name="title_activity_sub_ad_category">SubAdCategoryActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+</resources>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.zendo.zzz.frags.UserFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:id="@+id/userPortrait"
+        android:layout_gravity="left|top"
+        android:background="@mipmap/ic_user_female3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sonja Olinskaja"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/userPortrait"
+        android:layout_toRightOf="@+id/userPortrait"
+        android:layout_toEndOf="@+id/userPortrait"
+        android:layout_marginBottom="65dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="23 years old, experienced in childcare, manicure, pedicure. Moved to London from Russia in 2010. PhD in Nuclear Physics, certified aerobics instructor"
+        android:id="@+id/textView3"
+        android:layout_gravity="left|center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact me"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/background_floating_material_dark"
+    tools:context="com.zendo.zzz.SubAdCategoryActivity">
+
+    <TextView android:text="Sub category" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/background_floating_material_light" />
+
+    <TableLayout
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_floating_material_dark"
+        android:padding="40dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton2"
+                android:layout_column="2"
+                android:background="@mipmap/ic_girl_texting"
+                android:layout_marginRight="@dimen/column_1_right_margin" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton4"
+                android:layout_column="3"
+                android:background="@mipmap/ic_girl_texting"
+                android:layout_marginRight="@dimen/column_1_right_margin" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton4a"
+                android:layout_column="4"
+                android:background="@mipmap/ic_girl_texting"
+                android:layout_marginRight="@dimen/column_1_right_margin" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton3"
+                android:layout_column="4"
+                android:background="@mipmap/ic_girl_texting"
+                android:layout_marginRight="@dimen/column_1_right_margin" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:layout_column="3"
+                android:background="@mipmap/ic_girl_texting"
+                android:layout_marginRight="@dimen/column_1_right_margin" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
