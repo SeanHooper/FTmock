@@ -12,6 +12,10 @@ public class AdActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle extras = getIntent().getExtras();
+        /**
+         * Here, we will in the ideal case get the ad from the database. Just pass IDs around, not
+         * objects.
+         */
         String adId = extras.getString("adId", "nothing");
         setContentView(R.layout.activity_ad);
     }
