@@ -27,15 +27,16 @@ public class DBHandler extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_ADS + "("
                 + USER_NAME + " TEXT," + TOP_CATEGORY + " TEXT,"
-                + SUB_CATEGORY + " TEXT" + ")";
+                + SUB_CATEGORY + " TEXT,"
+                + "description" + " TEXT" + ")";
         db.execSQL(CREATE_CONTACTS_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-// Drop older table if existed
+        // Drop older table if existed
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_ADS);
-// Creating tables again
+        // Creating tables again
         onCreate(db);
     }
 }
