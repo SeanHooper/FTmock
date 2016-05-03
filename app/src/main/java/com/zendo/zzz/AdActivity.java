@@ -1,11 +1,9 @@
 package com.zendo.zzz;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import com.zendo.zzz.objects.Ad;
 
 
 public class AdActivity extends ActionBarActivity {
@@ -13,7 +11,8 @@ public class AdActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Ad currentAd = 
+        Bundle extras = getIntent().getExtras();
+        String adId = extras.getString("adId", "nothing");
         setContentView(R.layout.activity_ad);
     }
 
