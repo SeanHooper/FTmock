@@ -15,6 +15,9 @@ public class DBHandler extends SQLiteOpenHelper {
     // Contacts table name
     private static final String TABLE_ADS = "ads";
     private static final String TABLE_USERS = "users";
+    public static final String TOP_CATEGORY = "TOP_CATEGORY";
+    public static final String SUB_CATEGORY = "SUB_CATEGORY";
+    public static final String USER_NAME = "USER_NAME";
 
     public DBHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -23,15 +26,15 @@ public class DBHandler extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_ADS + "("
-                + "AD_ID" + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT,"
-                + KEY_SH_ADDR + " TEXT" + ")";
+                + USER_NAME + " TEXT," + TOP_CATEGORY + " TEXT,"
+                + SUB_CATEGORY + " TEXT" + ")";
         db.execSQL(CREATE_CONTACTS_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 // Drop older table if existed
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_SHOPS);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_ADS);
 // Creating tables again
         onCreate(db);
     }
