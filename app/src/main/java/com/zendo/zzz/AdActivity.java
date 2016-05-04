@@ -4,6 +4,12 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import com.zendo.zzz.objects.Ad;
+import com.zendo.zzz.objects.Fixtures;
+
+import java.util.List;
 
 
 public class AdActivity extends ActionBarActivity {
@@ -17,7 +23,17 @@ public class AdActivity extends ActionBarActivity {
          * objects.
          */
         String adId = extras.getString("adId", "nothing");
+        Fixtures fixtures = new Fixtures();
+        Ad ad = fixtures.getExampleAds().get(0);
+        setContentFromAd(ad);
         setContentView(R.layout.activity_ad);
+    }
+
+    private void setContentFromAd(Ad ad) {
+        TextView adTitle = (TextView)findViewById(R.id.adTitleTextView);
+        adTitle.setText(ad.getSubCategory());
+        TextView adDescription = (TextView)findViewById(R.id.descriptionTextView);
+        adDescription.setText(ad.getDescription());
     }
 
     @Override
