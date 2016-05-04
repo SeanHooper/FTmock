@@ -1,25 +1,29 @@
 package com.zendo.zzz;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Spinner;
 
-import com.zendo.zzz.R;
 
-public class UserProfile extends ActionBarActivity {
+public class BumpAdActivity extends Activity implements AdapterView.OnItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_profile);
-        ImageView userImage = (ImageView) findViewById(R.id.userPortrait)
+        setContentView(R.layout.activity_bump_ad);
+        // Spinner element
+        Spinner spinner = (Spinner) findViewById(R.id.topCategorySpinner);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_user_profile, menu);
+        getMenuInflater().inflate(R.menu.menu_bump_ad, menu);
         return true;
     }
 
@@ -36,5 +40,15 @@ public class UserProfile extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 }
