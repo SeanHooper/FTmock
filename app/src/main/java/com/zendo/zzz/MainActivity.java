@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class MaiActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
