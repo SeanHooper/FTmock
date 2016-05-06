@@ -13,6 +13,7 @@ public class UserProfile extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
+        ImageView userImage = (ImageView) findViewById(R.id.userPortrait)
     }
 
     @Override
